@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --kagit: #F4F6FB; --yuzey: #FFFFFF; --murekkep: #16213B; --soluk: #5D6880;
+      --cizgi: #D7DDEA; --lacivert: #1E3A8A; --vurgu: #FFB703;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --kagit: #0F1626; --yuzey: #18223A; --murekkep: #E8ECF6; --soluk: #9AA5BE;
+        --cizgi: #2C3956; --lacivert: #8FB0FF; --vurgu: #FFC233;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--kagit); color: var(--murekkep);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    .kap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+    header { border-bottom: 1px solid var(--cizgi); background: var(--yuzey); }
+    header .kap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px; padding-top: 14px; padding-bottom: 14px; }
+    .marka { font-weight: 800; font-size: 18px; color: var(--murekkep); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .marka::before { content: ""; width: 12px; height: 12px; border-radius: 3px; background: var(--vurgu); }
+    nav { display: flex; gap: 16px; font-size: 15px; }
+    nav a { color: var(--soluk); text-decoration: none; }
+    nav a:hover, nav a[aria-current="page"] { color: var(--lacivert); }
+    main { padding: 28px 0 48px; }
+    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+    h2 { font-size: 20px; margin: 32px 0 8px; }
+    h3 { font-size: 17px; margin: 22px 0 6px; }
+    p, ul { margin: 0 0 14px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--lacivert); }
+    .tarih { color: var(--soluk); font-size: 14px; margin-bottom: 24px; }
+    .ozet { background: var(--yuzey); border: 1px solid var(--cizgi); border-left: 4px solid var(--vurgu); border-radius: 12px; padding: 14px 18px; margin: 18px 0 8px; }
+    .ozet ul { margin: 0; }
+    footer { border-top: 1px solid var(--cizgi); color: var(--soluk); font-size: 14px; padding: 18px 0 28px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="kap">
+      <a class="marka" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav>
+        <a href="{{ '/gizlilik/' | relative_url }}"{% if page.url == '/gizlilik/' %} aria-current="page"{% endif %}>Gizlilik</a>
+        <a href="{{ '/kosullar/' | relative_url }}"{% if page.url == '/kosullar/' %} aria-current="page"{% endif %}>Koşullar</a>
+        <a href="{{ '/destek/' | relative_url }}"{% if page.url == '/destek/' %} aria-current="page"{% endif %}>Destek</a>
+      </nav>
+    </div>
+  </header>
+  <main class="kap">
+    {{ content }}
+  </main>
+  <footer>
+    <div class="kap">© {{ site.time | date: '%Y' }} {{ site.title }} · İletişim: {% include iletisim.html %}</div>
+  </footer>
+</body>
+</html>
