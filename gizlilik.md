@@ -19,6 +19,7 @@ hangi verilerin nerede işlendiğini ve 6698 sayılı Kişisel Verilerin Korunma
 - Çalışma ilerlemen yalnız telefonunda tutulur; bize gönderilmez.
 - Reklam, analiz ya da izleme aracı kullanmayız.
 - Ödemeyi Apple ya da Google alır. Premium'unu doğrulamak için RevenueCat hizmetini kullanırız.
+- Hata bildirimi ya da destek için bize e-posta yazarsan, e-postanı yalnız yanıt vermek ve içeriği düzeltmek için kullanırız.
 </div>
 
 ## Veri sorumlusu
@@ -67,6 +68,21 @@ Günlük hatırlatma bildirimleri telefonunda zamanlanır. Bir sunucudan bildiri
 Uygulama, ÖSYM sınav tarihlerini güncellemek için bu siteden bir takvim dosyası indirebilir. Bu sırada senden bir bilgi
 gönderilmez; siteyi barındıran GitHub, her web sitesinde olduğu gibi bağlantı için IP adresini teknik olarak işler.
 
+## Hata bildirimi ve e-posta
+
+Bir kartta ya da test sorusunda **Hata bildir**'e dokunduğunda uygulama, telefonundaki e-posta uygulamasını hazır bir
+metinle açar; uygulamanın kendisi bir şey göndermez. Göndermeden önce metnin tamamını görür, istediğini değiştirebilirsin.
+E-postayı gönderirsen bize şunlar ulaşır:
+
+- e-posta adresin (ve e-posta uygulamanın eklediği adın),
+- seçtiğin sebep ve yazdığın not,
+- bildirdiğin kartın ya da sorunun kimliği ve metni.
+
+Bize doğrudan e-posta yazdığında da aynı şekilde e-posta adresin ve mesajın bize ulaşır. Bu e-postaları yalnız sana
+yanıt vermek ve içerikteki hataları düzeltmek için kullanırız; bu amaç için gerekenden uzun saklamayız. E-postalar
+Google'ın e-posta hizmeti Gmail'de tutulur; Google bu verileri yurt dışındaki sunucularında işleyebilir. Ayrıntılar için
+[Google Gizlilik Politikası](https://policies.google.com/privacy).
+
 ## Çocuklar
 
 Uygulama YDS ve YÖKDİL'e hazırlanan yetişkinler için tasarlandı. Çocuklardan bilerek kişisel veri toplamayız.
@@ -74,7 +90,9 @@ Uygulama YDS ve YÖKDİL'e hazırlanan yetişkinler için tasarlandı. Çocuklar
 ## İşleme amacı ve hukuki sebep
 
 RevenueCat'e iletilen veriler, satın aldığın Premium hizmetini sunabilmek, yani aramızdaki sözleşmenin kurulması ve
-ifası için işlenir (KVKK m. 5/2-c). Bunun dışında kişisel veri işlemeyiz.
+ifası için işlenir (KVKK m. 5/2-c). Bize e-posta gönderdiğinde e-posta adresin ve mesajın, talebini yanıtlamak ve
+içerikteki hataları düzeltmek için meşru menfaatimiz kapsamında işlenir (KVKK m. 5/2-f). Bunun dışında kişisel veri
+işlemeyiz.
 
 ## Hakların
 

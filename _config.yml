@@ -4,13 +4,13 @@ lang: tr
 baseurl: /kelime-atolyesi
 
 # Sayfalarda görünen iletişim e-postası. Boşken "iletişim adresi yakında eklenecek" yazar.
-iletisim: ""
+iletisim: "nurettinveziroglu@gmail.com"
 
 # KVKK: veri sorumlusu
 veri_sorumlusu: Nurettin Veziroğlu
 
 # Gizlilik politikası ve kullanım koşullarındaki "son güncelleme" tarihi
-guncelleme: 17 Ekim 2026
+guncelleme: 16 Kasım 2026
 
 markdown: kramdown
 exclude:

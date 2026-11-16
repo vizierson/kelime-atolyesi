@@ -11,6 +11,13 @@ Sorun, öneri ya da hata bildirimi için: {% include iletisim.html %}
 
 ## Sık sorulanlar
 
+### Kartta ya da soruda hata gördüm
+
+Kartı çevir ve sağ alttaki bayrağa dokun; test sorularında cevabın altındaki **Bu soruda hata mı var?** bağlantısını
+kullan. Sebebi seç, istersen ne olması gerektiğini not olarak yaz. E-posta uygulaman hazır metinle açılır, göndermen
+yeter. Telefonunda e-posta uygulaması yoksa bildirim panoya kopyalanır; {% include iletisim.html %} adresine
+yapıştırıp gönderebilirsin.
+
 ### Premium'umu yeni telefona nasıl taşırım?
 
 Yeni telefonda aynı Apple Kimliği ya da Google hesabıyla giriş yap, uygulamada **Ayarlar › Üyelik › Satın alımları geri
